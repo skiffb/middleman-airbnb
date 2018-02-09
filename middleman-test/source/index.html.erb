@@ -1,0 +1,22 @@
+---
+title: Le Wagon - Middleman
+---
+
+<div id="home">
+
+  <div class="home-content">
+
+    <h1>Today is <%= Date.today.strftime("%A, %b %d") %></h1>
+
+    <ul class="list-inline">
+      <% ['Middleman', 'ERB', 'SCSS'].each do |tech| %>
+        <li>
+          I'm playing with <%= tech %>!
+        </li>
+      <% end %>
+    </ul>
+    <p class="about">
+      <%= link_to "More about this template", "about.html" %>
+    </p>
+  </div>
+</div>
